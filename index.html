@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+body {
+    margin:0;
+    padding:0;
+    background-color:#dde1f9;
+}
+   .box {
+       position:absolute ;
+       left:50%;
+       top:50%;
+       transform:translate(-50%,-50%);
+   }
+   input[ type="checkbox"] {
+       position:relative ;
+       width:180px;
+       height:80px;
+       -webkit-appearance:none;
+       background-color:#dde1f9;
+       outline:none;
+       border-radius:50px;
+       transition:.5s;
+       box-shadow: inset 2px 2px 5px #babecc,
+             inset -5px -5px 10px #ffffff73; 
+   }
+   input:checked[type="checkbox"] {
+       background-color:LawnGreen;
+   }
+    input[type="checkbox"]:before {
+        content:'';
+        position:absolute ;
+        width:80px;
+        height:80px;
+        border-radius:50%;
+        top:0;
+        box-shadow: 2px 2px 5px #babecc,
+               -5px -5px 10px #ffffff73;  ;
+        left:0;
+        background-color:#dde1f9;
+        transform:scale(1.1);
+        transition:.5s;
+    }
+      input:checked[type="checkbox"]:before {
+          left:95px;
+          box-shadow:2px 2px 5px #babecc,
+              -5px -5px 10px #ffffff73;  ;;
+      }
+    </head>
+    <body>
+        <div class="box">
+            <input type="checkbox" name="">
+        </div>
+    </body>
+</html>
